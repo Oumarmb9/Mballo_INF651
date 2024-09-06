@@ -1,0 +1,80 @@
+// Variable for a person's name
+let name = "Oumar Mballo";
+
+// Variable for their age
+let age = 21;
+
+// Variable for whether they are a student (boolean)
+let isStudent = true;
+
+// Declare two number variables
+let num1 = 10;
+let num2 = 5;
+
+// Perform arithmetic operations
+let addition = num1 + num2;          
+let subtraction = num1 - num2;       
+let multiplication = num1 * num2;   
+let division = num1 / num2;          
+
+// Output the results
+console.log("Addition: " + addition);         
+console.log("Subtraction: " + subtraction);   
+console.log("Multiplication: " + multiplication); 
+console.log("Division: " + division);   
+
+// Declare a string variable
+let sentence = "JavaScript is a powerful language.";
+
+// Log the length of the string
+console.log("Length of the string: " + sentence.length);
+
+// Log the first character
+console.log("First character: " + sentence.charAt(0));
+
+// Log the last character
+console.log("Last character: " + sentence.charAt(sentence.length - 1));
+
+// Declare a variable with a negative numerical value
+let num = -9;
+
+// Calculate and log the absolute value
+let absoluteValue = Math.abs(num);
+console.log("Absolute value: " + absoluteValue);
+
+// Calculate and log the square root
+let squareRoot = Math.sqrt(absoluteValue); 
+console.log("Square root: " + squareRoot);
+
+// Calculate and log the number squared
+let squared = Math.pow(num, 2);
+console.log("Number squared: " + squared);
+
+// Declare two number variables
+let num1 = 15;
+let num2 = 10;
+
+// Use comparison operators and log the results
+console.log("Is num1 greater than num2? " + (num1 > num2));  
+console.log("Is num1 less than num2? " + (num1 < num2));    
+console.log("Is num1 equal to num2? " + (num1 === num2));   
+
+// Declare two boolean variables
+let bool1 = true;
+let bool2 = false;
+
+// Log the results of logical operations
+console.log("Logical AND (bool1 && bool2): " + (bool1 && bool2)); 
+console.log("Logical OR (bool1 || bool2): " + (bool1 || bool2));  
+console.log("Logical NOT (!bool1): " + (!bool1));                  
+console.log("Logical NOT (!bool2): " + (!bool2));
+
+// Declare variables for the person's first and last name
+let firstName = "Oumar";
+let lastName = "Mballo";
+
+// Create a greeting message using template literals
+let greetingMessage = `Hello, ${firstName} ${lastName}! Welcome to my website.`;
+
+// Log the greeting message to the console
+console.log(greetingMessage);
