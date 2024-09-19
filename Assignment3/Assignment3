@@ -1,0 +1,110 @@
+// Generate a random number between 1 and 10
+let randomNumber = Math.floor(Math.random() * 10) + 1;
+let userGuess = 0;
+
+// Keep prompting the user until they guess the correct number
+while (userGuess !== randomNumber) {
+  userGuess = parseInt(prompt("Guess a number between 1 and 10:"));
+
+  if (userGuess < randomNumber) {
+    alert("Too low! Try again.");
+  } else if (userGuess > randomNumber) {
+    alert("Too high! Try again.");
+  } else if (userGuess === randomNumber) {
+    alert("Congratulations! You guessed the correct number.");
+  } else {
+    alert("Please enter a valid number.");
+  }
+}
+
+
+
+// Prompt the user to set a password
+let password = prompt("Set your password:");
+let confirmPassword;
+
+// Use a do-while loop to keep asking for confirmation until the passwords match
+do {
+  confirmPassword = prompt("Re-enter your password for confirmation:");
+  
+  if (confirmPassword !== password) {
+    alert("Passwords do not match. Please try again.");
+  }
+  
+} while (confirmPassword !== password);
+
+alert("Password successfully set!");
+
+
+
+
+// Ask the user to input a number
+let userNumber = parseInt(prompt("Enter a number:"));
+
+// Use a for loop to iterate through numbers 1 to 10
+for (let i = 1; i <= 10; i++) {
+  // Multiply the user's number by the current loop counter (i) and display the result
+  console.log(`${userNumber} x ${i} = ${userNumber * i}`);
+}
+
+
+
+// Prompt the user to enter their score
+let score = parseInt(prompt("Enter your score (between 0 and 100):"));
+
+// Check if the score is a valid number between 0 and 100
+if (score >= 0 && score <= 100) {
+  let grade;
+
+  // Use if-else if statements to assign the letter grade
+  if (score >= 90) {
+    grade = "A";
+  } else if (score >= 80) {
+    grade = "B";
+  } else if (score >= 70) {
+    grade = "C";
+  } else if (score >= 60) {
+    grade = "D";
+  } else {
+    grade = "F";
+  }
+
+  // Display the letter grade to the user
+  alert(`Your grade is: ${grade}`);
+} else {
+  // If the score is not valid, display an error message
+  alert("Please enter a valid score between 0 and 100.");
+}
+
+
+
+
+// Prompt the user to enter a number between 1 and 7
+let dayNumber = parseInt(prompt("Enter a number between 1 and 7:"));
+
+// Use a switch statement to map the number to the corresponding day of the week
+switch (dayNumber) {
+  case 1:
+    alert("Sunday");
+    break;
+  case 2:
+    alert("Monday");
+    break;
+  case 3:
+    alert("Tuesday");
+    break;
+  case 4:
+    alert("Wednesday");
+    break;
+  case 5:
+    alert("Thursday");
+    break;
+  case 6:
+    alert("Friday");
+    break;
+  case 7:
+    alert("Saturday");
+    break;
+  default:
+    alert("Invalid input. Please enter a number between 1 and 7.");
+}
