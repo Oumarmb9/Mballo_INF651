@@ -1,48 +1,94 @@
+/* General styles */
 body {
-    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
-  }
-  
-  .container {
-    margin-top: 50px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h3 {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
     color: #333;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Adds space between buttons */
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    padding: 0.5rem 1rem;
+    background-color: #45a049;
+    text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #388e3c;
+  }
+  
+  section {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    color: #4CAF50;
+  }
+  
+  /* Dashboard styles */
+  .dashboard p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  /* General form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Adds space between form elements */
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
   }
   
   input {
-    margin-bottom: 20px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
   }
   
-  #movie-list {
-    margin-top: 20px;
-  }
-  
-  .collection-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .collection-item .movie-title {
-    font-weight: 500;
-  }
-  
-  .collection-item .remove-btn {
-    color: red;
+  /* Button styling */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 1rem;
   }
   
-  #add-movie-btn {
-    background-color: #00796b;
+  button:hover {
+    background-color: #388e3c;
   }
   
-  #add-movie-btn:hover {
-    background-color: #004d40;
-  }
+  
